@@ -1,26 +1,29 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Algorithm {
-    private List<Double> _a = new ArrayList<>();
-    private List<Double> _b = new ArrayList<>();
-    private List<Double> _c = new ArrayList<>();
-    private List<Double> _f = new ArrayList<>();
+public class Algorithm extends Thread{
+    private final List<Double> _a;
+    private final List<Double> _b;
+    private final List<Double> _c;
+    private final List<Double> _f;
 
-    private List<Double> _alpha = new ArrayList<>();
-    private List<Double> _beta = new ArrayList<>();
-    private List<Double> _z = new ArrayList<>();
+    private final List<Double> _alpha = new ArrayList<>();
+    private final List<Double> _beta = new ArrayList<>();
+    private final List<Double> _z = new ArrayList<>();
 
-    private List<Double> _x = new ArrayList<>();
+    private final List<Double> _x;
+    int start;
+    int finish;
 
-    public Algorithm(List<Double> a, List<Double> b, List<Double> c, List<Double> f){
+    public Algorithm(List<Double> a, List<Double> b, List<Double> c,
+                     List<Double> f, List<Double> res, int start, int finish){
         _a = a;
         _b = b;
         _c = c;
         _f = f;
-        for (int i = 0; i < _f.size(); i++) {
-            _x.add(0.0);
-        }
+        _x = res;
+        this.start = start;
+        this.finish = finish;
     }
 
     private void calculateCoefficients() {
@@ -34,13 +37,13 @@ public class Algorithm {
         }
     }
 
-    public void solve()
+    public void run()
     {
         calculateCoefficients();
         Double temp1 = (_f.get(_f.size() - 1) - _a.get(_a.size() - 1) * _beta.get(_beta.size() - 1));
         Double temp2 = _c.get(_c.size() - 1) + _alpha.get(_alpha.size() - 1) * _a.get(_a.size() - 1);
-        _x.set(_x.size() - 1, temp1/temp2);
-        for (int i = _x.size()-2; i >= 0; i--) {
+        _x.set(finish - 1, temp1/temp2);
+        for (int i = finish - 2; i >= start; i--) {
             _x.set(i, _alpha.get(i) * _x.get(i + 1) + _beta.get(i));
         }
     }
