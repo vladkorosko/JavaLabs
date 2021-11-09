@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="knives" type="Knives" />
+
+    <xsd:complexType name="Knives">
+        <xsd:sequence>
+            <xsd:element name="knife" type="Knife" minOccurs="0"
+                         maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="Knife">
+        <xsd:sequence>
+            <xsd:element name="id" type="xsd:int"/>
+            <xsd:element name="type" type="Type"/>
+            <xsd:element name="handy" type="Handy"/>
+            <xsd:element name="origin" type="xsd:string"/>
+            <xsd:element name="visual" type="Visual"/>
+            <xsd:element name="weight" type="xsd:int"/>
+            <xsd:element name="value" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="Type">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="knife"/>
+            <xsd:enumeration value="dagger"/>
+            <xsd:enumeration value="straight sword"/>
+            <xsd:enumeration value="great sword"/>
+            <xsd:enumeration value="curved sword"/>
+            <xsd:enumeration value="katana"/>
+            <xsd:enumeration value="great curved sword"/>
+            <xsd:enumeration value="piercing sword"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="Handy">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="single-handed" />
+            <xsd:enumeration value="don't matter" />
+            <xsd:enumeration value="double-handed" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="Visual">
+        <xsd:sequence>
+            <xsd:element name="length" type="xsd:int"/>
+            <xsd:element name="width" type="xsd:int"/>
+            <xsd:element name="material_of_blade" type="xsd:string"/>
+            <xsd:element name="material_of_handle" type="xsd:string"/>
+            <xsd:element name="fuller" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

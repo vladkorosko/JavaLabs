@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<knives>
+    <knife>
+        <id>100200</id>
+        <type>curved sword</type>
+        <handy>single-handed</handy>
+        <origin>United Kingdom</origin>
+        <visual>
+            <length>120</length>
+            <width>5</width>
+            <material_of_blade>Steel</material_of_blade>
+            <material_of_handle>Oak</material_of_handle>
+            <fuller>true</fuller>
+        </visual>
+        <weight>1000</weight>
+        <value>false</value>
+    </knife>
+    <knife>
+        <id>100201</id>
+        <type>katana</type>
+        <handy>don't matter</handy>
+        <origin>Japan</origin>
+        <visual>
+            <length>125</length>
+            <width>4</width>
+            <material_of_blade>Steel</material_of_blade>
+            <material_of_handle>Sakura</material_of_handle>
+            <fuller>false</fuller>
+        </visual>
+        <weight>900</weight>
+        <value>false</value>
+    </knife>
+    <knife>
+        <id>100202</id>
+        <type>great sword</type>
+        <handy>double-handed</handy>
+        <origin>France</origin>
+        <visual>
+            <length>130</length>
+            <width>6</width>
+            <material_of_blade>Cast iron</material_of_blade>
+            <material_of_handle>Cast iron</material_of_handle>
+            <fuller>true</fuller>
+        </visual>
+        <weight>2500</weight>
+        <value>false</value>
+    </knife>
+
+</knives>
