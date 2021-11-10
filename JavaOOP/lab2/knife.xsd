@@ -24,22 +24,22 @@
 
     <xsd:simpleType name="Type">
         <xsd:restriction base="xsd:string">
-            <xsd:enumeration value="knife"/>
-            <xsd:enumeration value="dagger"/>
-            <xsd:enumeration value="straight sword"/>
-            <xsd:enumeration value="great sword"/>
-            <xsd:enumeration value="curved sword"/>
-            <xsd:enumeration value="katana"/>
-            <xsd:enumeration value="great curved sword"/>
-            <xsd:enumeration value="piercing sword"/>
+            <xsd:enumeration value="KNIFE"/>
+            <xsd:enumeration value="DAGGER"/>
+            <xsd:enumeration value="STRAIGHT_SWORD"/>
+            <xsd:enumeration value="GREAT_SWORD"/>
+            <xsd:enumeration value="CURVED_SWORD"/>
+            <xsd:enumeration value="KATANA"/>
+            <xsd:enumeration value="CURVED_GREAT_SWORD"/>
+            <xsd:enumeration value="PIERCING_SWORD"/>
         </xsd:restriction>
     </xsd:simpleType>
 
     <xsd:simpleType name="Handy">
         <xsd:restriction base="xsd:string">
-            <xsd:enumeration value="single-handed" />
-            <xsd:enumeration value="don't matter" />
-            <xsd:enumeration value="double-handed" />
+            <xsd:enumeration value="SINGLE_HANDED" />
+            <xsd:enumeration value="DO_NOT_MATTER" />
+            <xsd:enumeration value="DOUBLE_HANDED" />
         </xsd:restriction>
     </xsd:simpleType>
 

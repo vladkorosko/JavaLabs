@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<knife>
+    <id>100200</id>
+    <type>CURVED_SWORD</type>
+    <handy>SINGLE_HANDED</handy>
+    <origin>United Kingdom</origin>
+    <visual>
+        <length>120</length>
+        <width>5</width>
+        <material_of_blade>Steel</material_of_blade>
+        <material_of_handle>Oak</material_of_handle>
+        <fuller>true</fuller>
+    </visual>
+    <weight>1000</weight>
+    <value>false</value>
+</knife>

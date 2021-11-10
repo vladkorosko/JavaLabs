@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<knives>
+    <knife>
+        <id>103040</id>
+        <type>KNIFE</type>
+        <handy>SINGLE_HANDED</handy>
+        <origin>Ukraine</origin>
+        <visual>
+            <length>20</length>
+            <width>2</width>
+            <material_of_blade>Steel</material_of_blade>
+            <material_of_handle>Plastic</material_of_handle>
+            <fuller>false</fuller>
+        </visual>
+        <weight>200</weight>
+        <value>false</value>
+    </knife>
+
+    <id>103040</id>
+    <type>KNIFE</type>
+    <handy>SINGLE_HANDED</handy>
+    <origin>Ukraine</origin>
+    <visual>
+        <length>20</length>
+        <width>2</width>
+        <material_of_blade>Steel</material_of_blade>
+        <material_of_handle>Plastic</material_of_handle>
+        <fuller>false</fuller>
+    </visual>
+    <weight>200</weight>
+    <value>false</value>
+</knives>

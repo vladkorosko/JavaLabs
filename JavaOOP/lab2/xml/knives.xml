@@ -3,8 +3,8 @@
 <knives>
     <knife>
         <id>100200</id>
-        <type>curved sword</type>
-        <handy>single-handed</handy>
+        <type>CURVED_SWORD</type>
+        <handy>SINGLE_HANDED</handy>
         <origin>United Kingdom</origin>
         <visual>
             <length>120</length>
@@ -18,8 +18,8 @@
     </knife>
     <knife>
         <id>100201</id>
-        <type>katana</type>
-        <handy>don't matter</handy>
+        <type>KATANA</type>
+        <handy>DO_NOT_MATTER</handy>
         <origin>Japan</origin>
         <visual>
             <length>125</length>
@@ -33,8 +33,8 @@
     </knife>
     <knife>
         <id>100202</id>
-        <type>great sword</type>
-        <handy>double-handed</handy>
+        <type>GREAT_SWORD</type>
+        <handy>DOUBLE_HANDED</handy>
         <origin>France</origin>
         <visual>
             <length>130</length>

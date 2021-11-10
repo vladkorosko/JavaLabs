@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<knives>
+    <knife>
+        <id>109382</id>
+        <type>DAGGER</type>
+        <handy>SINGLE_HANDED</handy>
+        <origin>Italy</origin>
+        <visual>
+            <length>50</length>
+            <width>3</width>
+            <material_of_blade>Steel</material_of_blade>
+            <material_of_handle>Oak</material_of_handle>
+            <fuller>false</fuller>
+        </visual>
+        <weight>500</weight>
+        <value>false</value>
+    </knife>
+    <knife>
+        <id>109383</id>
+        <type>DAGGER</type>
+        <handy>SINGLE_HANDED</handy>
+        <origin>Italy</origin>
+        <visual>
+            <length>50</length>
+            <width>3</width>
+            <material_of_blade>Steel</material_of_blade>
+            <material_of_handle>Oak</material_of_handle>
+            <fuller>false</fuller>
+        </visual>
+        <weight>500</weight>
+        <value>true</value>
+    </knife>
+</knives>

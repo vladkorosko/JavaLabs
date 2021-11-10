@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<knives>
+    <knife>
+        <id>102930</id>
+        <type>STRAIGHT_SWORD</type>
+        <handy>SINGLE_HANDED</handy>
+        <origin>Germany</origin>
+        <visual>
+            <length>110</length>
+            <width>6</width>
+            <material_of_blade>Steel</material_of_blade>
+            <material_of_handle>Maple</material_of_handle>
+            <fuller>true</fuller>
+        </visual>
+        <weight>1000</weight>
+        <value>false</value>
+    </knife>
+    <knife>
+        <id>102931</id>
+        <type>STRAIGHT_SWORD</type>
+        <handy>SINGLE_HANDED</handy>
+        <origin>Germany</origin>
+        <visual>
+            <length>110</length>
+            <width>6</width>
+            <material_of_blade>Steel</material_of_blade>
+            <material_of_handle>Maple</material_of_handle>
+            <fuller>true</fuller>
+        </visual>
+        <weight>1000</weight>
+        <value>true</value>
+    </knife>
+</knives>

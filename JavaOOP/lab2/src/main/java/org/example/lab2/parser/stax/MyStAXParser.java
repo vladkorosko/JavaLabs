@@ -1,6 +1,7 @@
 package org.example.lab2.parser.stax;
 
 import org.example.lab2.knife.Knife;
+import org.example.lab2.parser.MyParser;
 import org.example.lab2.validator.ValidatorXML;
 
 import javax.naming.NameNotFoundException;
@@ -18,17 +19,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyStAXParser {
-    private final String xml_path;
-    private final String xsd_path;
+public class MyStAXParser extends MyParser {
 
     public MyStAXParser(String xml_path, String xsd_path){
-        this.xml_path = xml_path;
-        this.xsd_path = xsd_path;
-    }
-
-    private boolean validateXMLByXSD() {
-        return ValidatorXML.validateAgainstXSD(xml_path, xsd_path);
+        super(xml_path, xsd_path);
     }
 
     public List<Knife> parseXML() throws IOException {
@@ -107,12 +101,8 @@ public class MyStAXParser {
                     case XMLStreamConstants.END_ELEMENT -> {
                         EndElement endElement = event.asEndElement();
                         if (endElement.getName().getLocalPart().equalsIgnoreCase("knife")) {
-                            try {
-                                knives.add(new Knife(id, type, handy, origin, length, width,
-                                        mob, moh, fuller, weight, value));
-                            } catch (NameNotFoundException e) {
-                                e.printStackTrace();
-                            }
+                            knives.add(new Knife(id, type, handy, origin, length, width,
+                                                 mob, moh, fuller, weight, value));
                         }
                     }
                 }
