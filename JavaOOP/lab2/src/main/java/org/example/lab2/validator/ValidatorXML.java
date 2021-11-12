@@ -19,6 +19,7 @@ public interface ValidatorXML {
             xsd = new FileInputStream(path_xsd);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            return false;
         }
         try
         {

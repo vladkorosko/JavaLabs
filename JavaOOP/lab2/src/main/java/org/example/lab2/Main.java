@@ -4,6 +4,7 @@ import org.example.lab2.knife.Knife;
 import org.example.lab2.parser.dom.MyDOMParser;
 import org.example.lab2.parser.sax.MySAXParser;
 import org.example.lab2.parser.stax.MyStAXParser;
+import org.example.lab2.validator.ValidatorXML;
 
 import java.io.IOException;
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         try{
+            System.out.println(ValidatorXML.validateAgainstXSD("knives.xml", "knife.xsd"));
             System.out.println("DOM parser");
             MyDOMParser p = new MyDOMParser( "xml/knives.xml", "knife.xsd");
             List<Knife> knives = p.parseXML();

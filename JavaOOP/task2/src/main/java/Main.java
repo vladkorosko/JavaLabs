@@ -15,14 +15,14 @@ public class Main {
         f.add(-2.0);
         f.add(0.0);
         List<Double> result = new ArrayList<>(Collections.nCopies(f.size(), 0.0));
-        Algorithm al = new Algorithm(a,b,c,f, result, 0, result.size()/2);
-        AlgorithmReverse al2 = new AlgorithmReverse(a,b,c,f,result, result.size()/2, result.size());
+        //Algorithm al = new Algorithm(a,b,c,f, result, 0, result.size()/2);
+        AlgorithmReverse al2 = new AlgorithmReverse(a,b,c,f,result, 0, result.size());
 
-        al.start();
+        //al.start();
         al2.start();
 
         try{
-            al.join();
+            //al.join();
             al2.join();
         }
         catch (InterruptedException e){
