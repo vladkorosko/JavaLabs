@@ -2,11 +2,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-class AlgorithmReverseTest {
+class AlgorithmThreeDiagonalMatrixTest {
     @Test
     void test() {
         assertResult(
@@ -36,23 +34,15 @@ class AlgorithmReverseTest {
     }
 
     private void assertResult(List<Double> a, List<Double> b, List<Double> c, List<Double> f, List<Double> expRes) {
-        List<Double> result = new ArrayList<>(Collections.nCopies(f.size(), 0.0));
-        Algorithm al = new Algorithm(a, b, c, f, result, result.size() / 2, result.size());
-        AlgorithmReverse al2 = new AlgorithmReverse(a, b, c, f, result, 0, result.size() / 2);
-
-        al.start();
-        al2.start();
-
+        AlgorithmThreeDiagonalMatrix al = new AlgorithmThreeDiagonalMatrix(a, b, c, f);
         try {
-            al.join();
-            al2.join();
+            List<Double> result = al.solveMatrix();
+            assertEquals(expRes.size(), result.size());
+            for (int i = 0; i < expRes.size(); i++) {
+                assertEquals(expRes.get(i), result.get(i), 0.001);
+            }
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
-
-        assertEquals(expRes.size(), result.size());
-        for (int i = 0; i < expRes.size(); i++) {
-            assertEquals(expRes.get(i), result.get(i), 0.001);
         }
     }
 }

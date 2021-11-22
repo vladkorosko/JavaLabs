@@ -4,32 +4,19 @@ import java.util.List;
 
 public class Main {
     public  static void main(String[] args) {
-        List<Double> a = new ArrayList<>();
-        a.add(1.0);
-        List<Double> b = new ArrayList<>();
-        b.add(1.0);
-        List<Double> c = new ArrayList<>();
-        c.add(1.0);
-        c.add(-1.0);
-        List<Double> f = new ArrayList<>();
-        f.add(-2.0);
-        f.add(0.0);
-        List<Double> result = new ArrayList<>(Collections.nCopies(f.size(), 0.0));
-        //Algorithm al = new Algorithm(a,b,c,f, result, 0, result.size()/2);
-        AlgorithmReverse al2 = new AlgorithmReverse(a,b,c,f,result, 0, result.size());
+        try {
+            List<Double> a = List.of(4.0, 5.0);
+            List<Double> b = List.of(4.0, 5.0);
+            List<Double> c = List.of(2.0, 1.0, 2.0);
+            List<Double> f = List.of(18.0, 33.0, 30.0);
 
-        //al.start();
-        al2.start();
+            AlgorithmThreeDiagonalMatrix alg = new AlgorithmThreeDiagonalMatrix(a, b, c, f);
 
-        try{
-            //al.join();
-            al2.join();
-        }
-        catch (InterruptedException e){
+            List<Double> result = alg.solveMatrix();
+            System.out.println(result);
+
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-
-        System.out.println(result);
     }
 }
