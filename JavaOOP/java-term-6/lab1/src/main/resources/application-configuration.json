@@ -1,0 +1,6 @@
+{
+  "keycloakFile": "C:\\Users\\Vladyslav\\IdeaProjects\\lab 1\\JavaOOP\\java-term-6\\backend_lab_1\\src\\main\\resources\\keycloak.json",
+  "databaseUrl": "jdbc:postgresql://localhost:5432/my_db",
+  "databaseUsername": "vladislav",
+  "databasePassword": "password"
+}

@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    font-size: 32px;
+}
+
+button {
+    text-align: center;
+    background-color: #50fa17;
+    border-radius: 5%;
+    width: 10%;
+    height: 30px;
+    font-size: 20px;
+}
+
+table {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: smaller;
+}
+
+table td,
+table th {
+    border: 2px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #c4f69e;
+}
+
+table tr:hover {
+    background-color: #75ffea;
+}
+
+table button{
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+    border-radius: 10%;
+}
+
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #2fb3f5;
+    color: white;
+}
